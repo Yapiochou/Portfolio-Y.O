@@ -1,12 +1,12 @@
 :root {
-  --brand: #412d15;
-  --accent: #a56f63;
-  --ink: #27231f;
+  --brand: #0D47A1;
+  --accent: #2196F3;
+  --ink: #90CAF9;
   --muted: #f7f6f4;
   --line: #e8e3dd;
   --white: #fff;
-  --radius: 1.25rem;
-  --shadow: 0 1.25rem 2.5rem rgba(65, 45, 21, 0.08);
+  --radius: 1.3rem;
+  --shadow: 0 1.3rem 2.5rem rgba(65, 45, 21, 0.08);
 }
 * {
   box-sizing: border-box;
