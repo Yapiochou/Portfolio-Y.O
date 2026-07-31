@@ -1,12 +1,12 @@
 :root {
-  --brand: #5D4037;      /* Brun profond */
-  --accent: #E64A19;     /* Orange brique vif */
-  --ink: #D84315;        /* Terre cuite */
-  --muted: #FDF5E6;      /* Crème antique */
-  --line: #E6DCCF;       /* Sable */
-  --white: #FFFAF0;      /* Ivoire */
+  --brand: #1E3A8A;
+  --accent: #3B82F6;
+  --ink: #0F172A;
+  --muted: #F8FAFC;
+  --line: #CBD5E1;
+  --white: #FFFFFF;
   --radius: 1.3rem;
-  --shadow: 0 1.3rem 2.5rem rgba(93, 64, 55, 0.10);
+  --shadow: 0 1.3rem 2.5rem rgba(30, 58, 138, 0.12);
 }
 * {
   box-sizing: border-box;
