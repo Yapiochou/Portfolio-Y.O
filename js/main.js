@@ -70,9 +70,8 @@ const plastikHubCard = [...document.querySelectorAll(".project-card")].find(
 );
 
 if (plastikHubCard) {
-  const [designLink, demoLink] = plastikHubCard.querySelectorAll(
-    ".project-links a",
-  );
+  const [designLink, demoLink] =
+    plastikHubCard.querySelectorAll(".project-links a");
   const figmaLinks = [
     "https://www.figma.com/design/I2X9kHl30mlGCvdRow5LFO/plastikHub?node-id=106-2&t=e8j9tSNqVYqqXcK0-1",
     "https://www.figma.com/proto/I2X9kHl30mlGCvdRow5LFO/plastikHub?node-id=106-2&t=e8j9tSNqVYqqXcK0-1",
@@ -93,23 +92,18 @@ document
 document.querySelectorAll("[data-placeholder-link]").forEach((link) =>
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    window.alert(
-      "Le lien sera ajouté dès que tu me transmettras l’adresse GitHub ou la démo du projet.",
-    );
+    window.alert("Pas encore disponible.");
   }),
 );
 
 document
   .querySelector("[data-contact-form]")
   ?.addEventListener("submit", (event) => {
-    event.preventDefault();
     const form = event.currentTarget;
     const status = form.querySelector(".form-status");
     if (!form.checkValidity()) {
+      event.preventDefault();
       status.textContent = "Merci de compléter correctement tous les champs.";
       form.reportValidity();
-      return;
     }
-    status.textContent =
-      "Le formulaire est prêt. Il sera relié à un service d’envoi après ton choix.";
   });
